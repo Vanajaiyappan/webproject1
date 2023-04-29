@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    <center>
+        <h1>Schedule an appointment</h1>
+    </center>
+    <h3 id="name"></h3>
+    <div class="center">
+    <label class="a1">Title</label>
+    <input class="a2" type="text" placeholder="Enter Title">
+    <br>
+    <label class="a3">Agenta</label>
+    <input class="a4" type="Agenda" placeholder="Enter Agenta">
+    <br>
+    <label class="a5">Time</label>
+    <input class="a6" type="time" placeholder="Enter Time">
+    <br>
+    <label class="a7">Guest Name</label>
+    <input class="a8" type="text" placeholder="Enter guest name">
+    <br>
+    <label class="a12">Offhour</label>
+    <input class="a13" type="time" placeholder="Enter your offhour">
+    <br>
+    <input type="submit" value="Schedule it" class="sum">
+    <a class="a9" href="#">upcomming appointments</a>
+    <a class="a10" href="#">Update profile</a>
+    <a  class="11" href="#">Update Password</a>
+    </div>
+    <script>
+        var n=JSON.parse(localStorage.getItem("names"));
+        var c=localStorage.getItem("curuser");
+        document.getElementById("name").innerText="welcome "+n[c][0];
+        
+    </script>
+</body>
+</html>
